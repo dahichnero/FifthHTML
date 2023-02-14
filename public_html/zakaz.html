@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_zakaz.css" type="text/css" />
+    <title>Контрольное задание</title>
+</head>
+<body>
+    <h1>Заказ проекта</h1>
+    <a href="mailto:dashapinigina4065@gmail.com">Написать письмо</a>
+    <p>Здесь вы можете заполнить форму для заказа покупки проекта<br />Поля со <sup id="red">*</sup> обязательны для заполнения.</p>
+    <form>
+        <table border="1">
+            <tr>
+                <td>
+                    <p>Текст заказа в произвольной форме:</p>
+                </td>
+                <td>
+                    <textarea name="text" rows="10" cols="50"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Фамилия, имя, отчество<sup id="red">*</sup></p>
+                </td>
+                <td>
+                    <input name="fio" type="text" required></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Телефон<sup id="red">*</sup></p>
+                </td>
+                <td>
+                    <input name="phone" type="text" required></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>E-mail <sup id="red">*</sup></p>
+                </td>
+                <td>
+                    <input name="email" type="text" required></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Адрес</p>
+                </td>
+                <td>
+                    <input name="addres" type="text"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Выберите категорию проекта:</p>
+                </td>
+                <td>
+                    <select name="categoria">
+                        <option value="townhouse">Проекты таунхаусов и блокированных домов</option>
+                        <option value="two_family">Проекты домов на две семьи</option>
+                        <option value="uzkie">Проекты узких домов</option>
+                        <option value="banya">Проекты бань</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Выберите материал:</p>
+                </td>
+                <td>
+                    <select name="material">
+                        <option value="kirpich">Проекты кирпичных домов</option>
+                        <option value="gazo_peno">Проекты домов из газобетона и пенобетона</option>
+                        <option value="brus_brevno">Проекты домов из бруса и бревна</option>
+                        <option value="karkas">Проекты каркасных домов</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Ваш возраст:</p>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <input name="young" value="до 18" type="radio">до 18</input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="mid" type="radio" value="18-50">18-50</input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="old" type="radio" value="Старше 50">Старше 50</input>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Заказать"></input>
+        <input type="reset" value="Очистить"></input>
+    </form>
+</body>
+</html>

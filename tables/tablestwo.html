@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Контрольное задание</title>
+    <link rel="stylesheet" href="../public_html/style.css" type="text/css" />
+</head>
+<body>
+    <table width="100%" height="500" align="left">
+        <tr>
+            <td colspan="2" height="50">
+                <font color="blue" face="Arial" size="15">
+                    <marquee align="middle" direction="left" bgcolor="#B3DCFD" width="100%" behavior="scroll" scrollamount="50"
+                    Hspace="0" Vspace="0">
+                        <b>Каталог готовых архитектурных проектов коттеджей</b>
+                    </marquee>
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td style="float: left; width:350px" width="100"  bgcolor="#CCFFFF">
+                <img src="../public_html/logo_myhouse.gif" />
+                <br />
+                <h4 id="blue">Категории проектов</h4>
+
+                <ol id="blue_2">
+                    <li><a href="tables.html">Каталог архитектурных проектов</a></li>
+                    <li>Проекты домов на две семьи</li>
+                    <li>Проекты узких домов</li>
+                    <li>Проекты бань</li>
+                </ol>
+
+                <h4 id="blue">Каталог архитектурных проектов</h4>
+
+                <ul id="blue_2">
+                    <li>Проекты кирпичных домов</li>
+                    <li>Проекты домов из газобетона и пенобетона</li>
+                    <li>Проекты домов из бруса и бревна</li>
+                    <li>Проекты каркасных домов</li>
+                </ul>
+
+                <h4 id="brown">Площади домов</h4>
+                <ul id="brown_2">
+                    <li>до 150 м<sup>2</sup></li>
+                    <li>от 150 до 250 м<sup>2</sup></li>
+                    <li>от 250 до 400 м<sup>2</sup></li>
+                    <li>от 400 м<sup>2</sup></li>
+                </ul>
+            </td>
+
+
+
+            <td width="1000">
+                <h1>Заказ проекта</h1>
+                <a href="mailto:dashapinigina4065@gmail.com">Написать письмо</a>
+                <p>Здесь вы можете заполнить форму для заказа покупки проекта<br />Поля со <sup id="red">*</sup> обязательны для заполнения.</p>
+                <form>
+                    <table border="1">
+                        <tr>
+                            <td>
+                                <p>Текст заказа в произвольной форме:</p>
+                            </td>
+                            <td>
+                                <textarea name="text" rows="10" cols="50"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Фамилия, имя, отчество<sup id="red">*</sup></p>
+                            </td>
+                            <td>
+                                <input name="fio" type="text" required></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Телефон<sup id="red">*</sup></p>
+                            </td>
+                            <td>
+                                <input name="phone" type="text" required></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>E-mail <sup id="red">*</sup></p>
+                            </td>
+                            <td>
+                                <input name="email" type="text" required></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Адрес</p>
+                            </td>
+                            <td>
+                                <input name="addres" type="text"></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Выберите категорию проекта:</p>
+                            </td>
+                            <td>
+                                <select name="categoria">
+                                    <option value="townhouse">Проекты таунхаусов и блокированных домов</option>
+                                    <option value="two_family">Проекты домов на две семьи</option>
+                                    <option value="uzkie">Проекты узких домов</option>
+                                    <option value="banya">Проекты бань</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Выберите материал:</p>
+                            </td>
+                            <td>
+                                <select name="material">
+                                    <option value="kirpich">Проекты кирпичных домов</option>
+                                    <option value="gazo_peno">Проекты домов из газобетона и пенобетона</option>
+                                    <option value="brus_brevno">Проекты домов из бруса и бревна</option>
+                                    <option value="karkas">Проекты каркасных домов</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Ваш возраст:</p>
+                            </td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input name="young" value="до 18" type="radio">до 18</input>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="mid" type="radio" value="18-50">18-50</input>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="old" type="radio" value="Старше 50">Старше 50</input>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Заказать"></input>
+                    <input type="reset" value="Очистить"></input>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Формы</title>
+</head>
+<body>
+    <form>
+        <textarea name="address" rows="7" cols="40">Ваши комментарии</textarea>
+    </form>
+    <table>
+        <tr>
+            <td>Выберите категорию проекта:</td>
+            <td>
+                <form>
+                    <select name="kategoria">
+                        <option value="townhouse">Проекты таунхаусов и блокированных домов</option>
+                        <option value="two_family">Проекты домов на две семьи</option>
+                        <option value="uzkie">Проекты узких домов</option>
+                        <option value="banya">Проекты бань</option>
+                    </select>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Выберите материал:</td>
+            <td>
+                <select name="material">
+                    <option value="kirpich">Проекты кирпичных домов</option>
+                    <option value="gazo_peno">Проекты домов из газобетона и пенобетона</option>
+                    <option value="brus_brevno">Проекты домов из бруса и бревна</option>
+                    <option value="karkas">Проекты каркасных домов</option>
+                </select>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <table border="2">
+        <tr>
+            <td>
+                <form>
+                <input name="young" value="до 18" type="radio">до 18</input>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input name="mid" type="radio" value="18-50">18-50</input>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input name="old" type="radio" value="Старше 50">Старше 50</input> 
+            </form> 
+            </td>
+        </tr>
+    </table>
+
+    <form action="8.GIF">
+        <table border="2">
+            <tr>
+                <td>
+                        <input name="town_blok" type="checkbox" value="Проекты таунхаусов и блокированных домов">Проекты таунхаусов и блокированных домов</input>    
+                </td> 
+            </tr>
+            <tr>
+                <td>
+                    <input name="two_fam" type="checkbox" value="Проекты домов на две семьи">Проекты домов на две семьи</input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input name="uz_home" type="checkbox" value="Проекты узких домов">Проекты узких домов</input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input name="ban_home" type="checkbox" value="Проекты бань">Проекты бань</input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input name="kir_home" type="checkbox" value="Проекты кирпичных домов">Проекты кирпичных домов</input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input name="gaz_home" type="checkbox" value="Проекты домов из газобетона и пенобетона">Проекты домов из газобетона и пенобетона</input> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input name="brus_home" type="checkbox" value="Проекты домов из бруса и бревна">Проекты домов из бруса и бревна</input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input name="kar_home" type="checkbox" value="Проекты каркасных домов">Проекты каркасных домов</input>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Отправить данные"></input>
+        <input type="reset" value="Очистить"></input>
+    </form>
+    
+    <form>
+        <table border="2">
+            <tr>
+                <td>
+                    <input name="fio" type="text" required value="ФИО">Фамилия, имя, отчество<sup style="color:red">*</sup></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input name="phone" type="text" required value="+7**********">Телефон<sup style="color:red">*</sup></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input name="email" type="text" required value="spasap@gmai.com">E-mail<sup style="color:red">*</sup></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input name="addres" type="text" required value="No name Street 54">Адрес<sup style="color:red">*</sup></input>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
